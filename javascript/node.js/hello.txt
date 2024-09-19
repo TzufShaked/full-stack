@@ -1,0 +1,25 @@
+Hello,world!
+
+// http.createServer((req,res)=>{
+//     res.writeHead(200,{'Content-Type':'text/plain'});
+//     res.end('Hello,world!');
+// }).listen(3000);
+
+// const filePath=path.join(__dirname,'hello.txt');
+
+// console.log(filePath);
+
+// function createFile(){
+//     fs.writeFileSync('hello.txt','Hello,world!');
+// }
+
+// function readFile(){
+//     const data=fs.readFileSync('hello.txt','utf8');
+//     console.log(data);
+// }
+
+const {users,getUser, getUsers}=require('./users')
+
+console.log(users[0].name);
+
+console.log(getUsers(1).name);
